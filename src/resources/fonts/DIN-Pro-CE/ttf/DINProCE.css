@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'DIN';
+  src: url('./DINProCE-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Use Helvetica for lt and gt signs because DIN makes arrows out of them */
+@font-face {
+  font-family: 'DIN';
+  src: local("Helvetica");
+  unicode-range: U+003C, U+003E; /* lessThanSign && GraterThanSign force this range because DIN makes arrows of gt and lt signs */
+}
+
+@font-face {
+  font-family: 'DIN-BOLD';
+  src: url('./DINProCE-Bold.ttf') format('truetype');
+}
+/* Use Helvetica for lt and gt signs because DIN-BOLD makes arrows out of them */
+@font-face {
+  font-family: 'DIN-BOLD';
+  src: local("Arial Black");
+  /* font-weight: bold; */
+  unicode-range: U+003C, U+003E; /* lessThanSign && GraterThanSign force this range because DIN-BOLD makes arrows of gt and lt signs */
+}
+
+@font-face {
+  font-family: 'blackItalic';
+  src: url('./DINProCE-BlackItalic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url('./DINProCE-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'boldItalic';
+  src: url('./DINProCE-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'italic';
+  src: url('./DINProCE-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'light';
+  src: url('./DINProCE-Light.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'lightItalic';
+  src: url('./DINProCE-LightItalic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url('./DINProCE-Medium.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url('./DINProCE-Regular.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'mediumItalic';
+  src: url('./DINProCEc-MediumItalic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'black';
+  src: url('./DINProCEk-Black.ttf') format('truetype');
+  font-style: italic;
+} 
+

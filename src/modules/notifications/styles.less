@@ -1,0 +1,100 @@
+@import (once) '../../resources/fonts/SmartSense/SmartSenseIconSet.css';
+@import (once) '../../resources/fonts/SmartSense/SmartSenseIconSetNames.less';
+
+@import (reference) "../../styles/variables.less";
+
+// according to DELETE_POSSIBILITY_ACTIVATED constant in index.jsx use a different info width
+.notification-buttons {
+  &-one {
+    width:calc(~"100% - 40px");
+  }
+  &-two {
+    width:calc(~"100% - 80px");
+  }
+}
+
+.notifications-page {
+
+  &-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #7f7f7f;
+    text-align: center;
+    margin:30px 0 10px 0 !important;
+    &-wrapper {
+      margin:0;
+    }
+  }
+
+  &-wrapper {
+    .notifications-page {
+      &-notifications {
+        // padding:0 @default-padding;
+      }
+    }
+    .notifications-single {
+      &-info {
+        display: inline-block;
+        // if the DELETE_POSSIBILITY_ACTIVATED const is true than use calc(~"100% - 80px"); else calc(~"100% - 40px");
+        // see also .notification-buttons ... above
+        // width:calc(~"100% - 80px");
+      }
+      &-admin {
+        background-color: lighten(@color-blue,20%);
+      }
+      &-read,
+      &-delete {
+        display: inline-block;
+        width:40px;
+        text-align: right;
+      }
+      &-read {
+        i {
+          color:@color-green;
+        }
+      }
+      &-delete {
+        i {
+          color:@color-red;
+        }
+      }
+    }
+    &-error {
+      &-inner {
+      }
+    }
+  }
+
+
+}
+.row,
+.row:before {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.list-group-item {
+  background-color: white;
+  &-text {
+    margin:8px 0 8px 0;
+    color:darken(@color-content-background, 20%);
+    @media (max-width: 1200px) {
+      font-size: 80%
+    }
+    @media screen and (max-width:600px) {
+      font-size: 80%
+    }
+  }
+  &-heading {
+    margin:8px 0 8px 0;
+    color:@color-header-icon;
+    @media (max-width: 1200px) {
+      font-size: 100%
+    }
+    @media screen and (max-width:600px) {
+      font-size: 100%
+    }
+  }
+}

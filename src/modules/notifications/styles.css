@@ -1,0 +1,80 @@
+@import '../../resources/fonts/SmartSense/SmartSenseIconSet.css';
+/*!
+ *  Smart Sense Font Icon Set
+ *
+ *  http://www.smart-sense.hr
+ */
+.notification-buttons-one {
+  width: calc(100% - 40px);
+}
+.notification-buttons-two {
+  width: calc(100% - 80px);
+}
+.notifications-page-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #7f7f7f;
+  text-align: center;
+  margin: 30px 0 10px 0 !important;
+}
+.notifications-page-title-wrapper {
+  margin: 0;
+}
+.notifications-page-wrapper .notifications-single-info {
+  display: inline-block;
+}
+.notifications-page-wrapper .notifications-single-admin {
+  background-color: #e0ecf0;
+}
+.notifications-page-wrapper .notifications-single-read,
+.notifications-page-wrapper .notifications-single-delete {
+  display: inline-block;
+  width: 40px;
+  text-align: right;
+}
+.notifications-page-wrapper .notifications-single-read i {
+  color: #5eab4f;
+}
+.notifications-page-wrapper .notifications-single-delete i {
+  color: #e12853;
+}
+.row,
+.row:before {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.list-group-item {
+  background-color: white;
+}
+.list-group-item-text {
+  margin: 8px 0 8px 0;
+  color: #c2c2c2;
+}
+@media (max-width: 1200px) {
+  .list-group-item-text {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .list-group-item-text {
+    font-size: 80%;
+  }
+}
+.list-group-item-heading {
+  margin: 8px 0 8px 0;
+  color: #7b7b7b;
+}
+@media (max-width: 1200px) {
+  .list-group-item-heading {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .list-group-item-heading {
+    font-size: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

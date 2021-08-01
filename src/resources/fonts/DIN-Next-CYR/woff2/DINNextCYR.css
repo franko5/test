@@ -1,0 +1,13 @@
+/* Use DIN cyrillic Regular for cyrillic unicode letters */
+@font-face {
+  font-family: 'DIN-CYRILLIC';
+  src: url('./DINNextCYR-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use DIN cyrillic Regular for cyrillic unicode letters */
+@font-face {
+  font-family: 'DIN-CYRILLIC-BOLD';
+  src: url('./DINNextCYR-Bold.woff2');
+}

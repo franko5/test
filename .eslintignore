@@ -1,0 +1,3 @@
+# ignoring from lint
+/node_modules
+/build

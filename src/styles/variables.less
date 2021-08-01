@@ -1,0 +1,126 @@
+//////////////////////////////////////////////////////////////////////////////////////
+// Default App variables
+//////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////
+// fonts // font-family is definde in styles.less
+@font-family-DIN: "DIN","DIN-CYRILLIC";
+@font-family-DIN_BOLD: "DIN-BOLD","DIN-CYRILLIC-BOLD";
+
+@font-family-default: @font-family-DIN;
+@font-family-bold: @font-family-DIN_BOLD;
+
+//////////////////////////////////////////////////////////////////////////////////////
+// navbar sizing
+// !!! important
+// if you want to change @nav-bar-base-height, you have to change its .js counterpart 
+// Constants.js -> NAV_BAR_BASE_HEIGHT
+// because, for correct calculation in all dashboards its value is needed
+@nav-bar-base-height: 48px; // if you want to change this variable, please read notes above
+@nav-bar-margin: 6px;
+@nav-bar-height: @nav-bar-base-height;
+@nav-bar-graph-height: 40px;
+//////////////////////////////////////////////////////////////////////////////////////
+// sidebar sizing
+@sidebar-item-height: @nav-bar-base-height;
+//////////////////////////////////////////////////////////////////////////////////////
+// title margin
+@default-title-margin: 10px;
+
+//////////////////////////////////////////////////////////////////////////////////////
+// default padding
+@default-padding: 10px;
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////COLORS
+//////////////////////////////////////////////////////////////////////////////////////
+// MAIN COLORS
+@color-white: white;
+@color-green-light: #62df49;
+@color-green: #5eab4f;
+@color-yellow: #e4be33;
+@color-red-light: #ff285a;
+@color-red: #e12853;
+@color-blue: #9bc2cf;
+@color-purple: #b266b2;
+@color-gray: lightgray;
+@color-light-gray: #eaeaea;
+@color-medium-gray: #7b7b7b;
+@color-dark-gray: #303030;
+
+// AirQ Widget Colors
+@color-verylow:#79bc6a;
+@color-low:#bbcf4c;
+@color-medium: #eec20b;
+@color-high: #f29305;
+@color-veryhigh: #e8416f;
+@color-hazardous: #af2d51;
+// AirQ Widget Colors US
+@color-us-verylow:#00e400;
+@color-us-low:#ffff00;
+@color-us-medium: #ff7e00;
+@color-us-high: #ff0000;
+@color-us-veryhigh: #8f3f97;
+@color-us-hazardous: #7e0023;
+
+//////////////////////////////////////////////////////////////////////////////////////
+// element coloring
+@color-site-background: @color-white;
+@color-detail-site-background: @color-dark-gray;
+
+@color-icons: @color-white;
+
+@color-header: rgba(221,223,227,255);
+@color-header-title: rgba(15,13,16,255);
+@color-header-icon: @color-medium-gray;
+
+@color-sidebar: rgba(176,177,178,255);
+@color-separation-line: @color-icons;
+
+@color-content: rgba(212,218,219,255);
+@color-content-loading: @color-content;
+
+@color-content-background: whitesmoke;
+
+@color-widget-background: @color-content-background;
+
+@color-activity-indicator: @color-icons;
+@color-activity-background: @color-sidebar;
+
+@color-about-page: @color-dark-gray;
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////GRID
+// HEADER
+@color-grid-item-header:@color-icons;
+@color-grid-item-header-background: @color-sidebar; 
+
+// BODY
+@color-grid-item-body-background: @color-white;
+
+// FOOTER
+@color-grid-item-footer:inherit;
+@color-grid-item-footer-background: @color-white;
+@stroke-width-grid-item-footer-border-top: 2px;
+@color-grid-item-footer-border: @color-grid-item-header-background;
+@font-size-grid-item-footer: 15px;
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////CUSTOM WIDGETS
+// COLOR DOTS
+@color-grid-item-footer-color-dots-green: @color-green;
+@color-grid-item-footer-color-dots-yellow: @color-yellow;
+@color-grid-item-footer-color-dots-red: @color-red;
+
+// CHART BAR
+@color-grid-item-chart-bar-green: @color-green;
+@color-grid-item-chart-bar-yellow: @color-yellow;
+@color-grid-item-chart-bar-red: @color-red;
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+////////// SPECIFIC APP OVERRIDE .. is handled correctly with build.sh script
+////////// the variablesExtension.less file is ignored in .gitignore, but only the file of this directory
+////////// App specific files are not part of .gitignore => ./airq/variablesExtension.less 
+////////// and need to be added
+@import './variablesExtension.less';
